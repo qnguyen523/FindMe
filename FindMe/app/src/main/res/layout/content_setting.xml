@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.peter.findme.Setting"
+    tools:showIn="@layout/activity_setting">
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Level 4: share current speedn and direction, current geolocation"
+        android:id="@+id/radioButton"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/radioButton3"
+        android:layout_alignParentLeft="true"
+        android:checked="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Setting of Geolocation Sharing:"
+        android:id="@+id/settingText"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Level 1: share city"
+        android:id="@+id/radioButton2"
+        android:layout_below="@+id/settingText"
+        android:layout_alignParentStart="true"
+        android:checked="false" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Level 3: share street, zip code, city"
+        android:id="@+id/radioButton3"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/radioButton4"
+        android:layout_alignParentLeft="true"
+        android:checked="false" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Level 2: share zip code, city"
+        android:id="@+id/radioButton4"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/radioButton2"
+        android:layout_alignParentLeft="true"
+        android:checked="false" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/button"
+        android:layout_below="@+id/radioButton5"
+        android:layout_alignParentStart="true" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No sharing geolocation"
+        android:id="@+id/radioButton5"
+        android:layout_below="@+id/radioButton"
+        android:layout_alignParentStart="true"
+        android:checked="false" />
+</RelativeLayout>
